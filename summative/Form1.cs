@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 using System.Threading;
+
 //Created By: Jacob Cressman
 //Date: Sept 2018
 //Description: Leo star constelation
@@ -29,6 +31,7 @@ namespace summative
             SolidBrush drawBrush = new SolidBrush(Color.White);
             SolidBrush desBrush = new SolidBrush(Color.DarkGreen);
             Font drawFont = new Font("Arial", 10, FontStyle.Bold);
+            SoundPlayer player = new SoundPlayer(Properties.Resources.beep);
 
             g.Clear(Color.Black);
             g.FillEllipse(drawBrush, 184, 38, 7, 7);
@@ -52,7 +55,6 @@ namespace summative
             g.DrawString("Leo is one of the constellations of the zodiac," +
                 "\nlying between cancer, the crab to the west," +
                 "\nand virgo the maiden to the east.", drawFont, desBrush, 2, 200);
-
         }
 
         private void Form1_Shown(object sender, EventArgs e)
