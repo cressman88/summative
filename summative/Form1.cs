@@ -62,7 +62,7 @@ namespace summative
             Font titleFont = new Font("Arial", 30, FontStyle.Bold);
             Font nameFont = new Font("Arial", 18, FontStyle.Bold);
 
-            g.DrawString("LEO", titleFont, titleBrush, 100, 65);
+            g.DrawString("LEkO", titleFont, titleBrush, 100, 65);
             g.DrawString("By: Jacob Cressman", nameFont, titleBrush, 25, 250);
         }
     }
